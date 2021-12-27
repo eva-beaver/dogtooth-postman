@@ -1,39 +1,10 @@
 {
 	"info": {
-		"_postman_id": "fa52f0a9-482f-4408-b539-5933a9c552f1",
+		"_postman_id": "552b808c-c36a-4c1e-85c2-4dfcb3f84f46",
 		"name": "Dogtooth Services",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
-		{
-			"name": "Department Service Post",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"departmentName\":\"IT\",\n    \"departmentCode\":\"IT-Test\",\n    \"departmentAddress\":\"1 The Street, AnyTown\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:9001/departments/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "9001",
-					"path": [
-						"departments",
-						""
-					]
-				}
-			},
-			"response": []
-		},
 		{
 			"name": "User Service Post",
 			"request": {
@@ -57,6 +28,35 @@
 					"port": "9002",
 					"path": [
 						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department Service Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"departmentName\":\"IT\",\n    \"departmentCode\":\"IT-Test\",\n    \"departmentAddress\":\"1 The Street, AnyTown\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/departments/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"departments",
 						""
 					]
 				}
@@ -90,6 +90,199 @@
 					"path": [
 						"departments",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department Service Health",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"departmentName\":\"IT\",\n    \"departmentCode\":\"IT-Test\",\n    \"departmentAddress\":\"1 The Street, AnyTown\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department Service Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"departmentName\":\"IT\",\n    \"departmentCode\":\"IT-Test\",\n    \"departmentAddress\":\"1 The Street, AnyTown\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/actuator/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"actuator",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department Service Loggers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"departmentName\":\"IT\",\n    \"departmentCode\":\"IT-Test\",\n    \"departmentAddress\":\"1 The Street, AnyTown\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/actuator/loggers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"actuator",
+						"loggers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department Service Metrics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"departmentName\":\"IT\",\n    \"departmentCode\":\"IT-Test\",\n    \"departmentAddress\":\"1 The Street, AnyTown\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/actuator/metrics/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"actuator",
+						"metrics",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department Service Metrics Env",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"departmentName\":\"IT\",\n    \"departmentCode\":\"IT-Test\",\n    \"departmentAddress\":\"1 The Street, AnyTown\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/actuator/env/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"actuator",
+						"env",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department Service Actuator",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"departmentName\":\"IT\",\n    \"departmentCode\":\"IT-Test\",\n    \"departmentAddress\":\"1 The Street, AnyTown\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/actuator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"actuator"
 					]
 				}
 			},
